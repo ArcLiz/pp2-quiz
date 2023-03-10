@@ -51,6 +51,11 @@ function runQuiz() {
         alternatives.appendChild(newDiv);
     }
 
+    // writing current player score
+    let playerScore = document.getElementById("player-score");
+    playerScore.innerHTML = `You currently have ${userPoints} out of 15.`
+
+    // delayed hint for if a user takes too long to answer the question
     function hint() {
         let hints = document.getElementById('hint');
         hints.innerHTML = `Hint: ` + myQuestions[now].hint;
