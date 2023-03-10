@@ -51,4 +51,10 @@ function runQuiz() {
         alternatives.appendChild(newDiv);
     }
 
+    function hint() {
+        let hints = document.getElementById('hint');
+        hints.innerHTML = `Hint: ` + myQuestions[now].hint;
+    }
+    setTimeout(hint, 10000);
+    
 }

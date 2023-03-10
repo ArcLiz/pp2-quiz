@@ -69,3 +69,9 @@ header p {
 .box:hover {
     background-color: LightCyan;
 }
+
+#hint {
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: -20px;
+}
