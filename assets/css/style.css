@@ -70,6 +70,14 @@ header p {
     background-color: LightCyan;
 }
 
+.active {
+    background-color: lightgoldenrodyellow;
+}
+
+#area-hints {
+    height: 3rem;
+}
+
 #hint {
     font-style: italic;
     padding-bottom: 10px;

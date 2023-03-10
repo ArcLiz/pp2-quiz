@@ -62,4 +62,42 @@ function runQuiz() {
     }
     setTimeout(hint, 10000);
     
+    // Searching for user click on alternative
+    let choices = document.querySelectorAll("div.alts");
+
+    for (let i = 0; i < choices.length; i++) {
+        choices[i].addEventListener('click', function () {
+            choices[i].classList.add("active");
+            
+            playerClick();
+        });
+    }
+    clearTimeout(1);
+}
+
+// Function to read the results of player choice and move to the next question
+
+function playerClick() {
+    let user_answer = document.querySelector("div.active").innerHTML;
+
+    if (user_answer === myQuestions[now].correct) {
+        userPoints += 1;
+        localStorage.setItem("userPoints", userPoints)
+        
+        cleanUp();
+    } else {
+        cleanUp();
+    }
+}
+
+// Tidyup and updating for all areas
+function cleanUp() {
+    let questionClear = document.getElementById("questions");
+    questionClear.innerHTML = "";
+
+    let altsClear = document.getElementById("area-alternatives");
+    altsClear.innerHTML = "";
+
+    let playerScore = document.getElementById("player-score");
+    playerScore.innerHTML = `You currently have ${userPoints} out of 15.`
 }
