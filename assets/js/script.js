@@ -68,7 +68,7 @@ function runQuiz() {
     for (let i = 0; i < choices.length; i++) {
         choices[i].addEventListener('click', function () {
             choices[i].classList.add("active");
-            
+
             playerClick();
         });
     }
@@ -85,8 +85,10 @@ function playerClick() {
         localStorage.setItem("userPoints", userPoints)
         
         cleanUp();
+        correctFact();
     } else {
         cleanUp();
+        incorrectFact();
     }
 }
 
@@ -100,4 +102,34 @@ function cleanUp() {
 
     let playerScore = document.getElementById("player-score");
     playerScore.innerHTML = `You currently have ${userPoints} out of 15.`
+}
+
+// Paus between questions if the user answered correctly
+function correctFact() {
+    console.log("Yay I answered correctly!")
+    let congratulations = document.getElementById("questions");
+    congratulations.innerHTML = "Congratulations, you're absolutely right!";
+
+    let alternatives = document.getElementById('area-alternatives');
+    alternatives.innerHTML = myQuestions[now].funfact;
+    console.log(myQuestions[now].funfact);
+
+    setTimeout(cleanUp, 4999);
+    now++
+    setTimeout(runQuiz, 5000);
+}
+
+// Paus between questions if the user answered incorrectly
+function incorrectFact() {
+    console.log("Oops I answered wrong")
+    let condoleances = document.getElementById("questions");
+    condoleances.innerHTML = "Oh no, it looks like you got this one wrong.";
+
+    let alternatives = document.getElementById('area-alternatives');
+    alternatives.innerHTML = myQuestions[now].funfact;
+    console.log(myQuestions[now].funfact);
+
+    setTimeout(cleanUp, 4999);
+    now++
+    setTimeout(runQuiz, 5000);
 }
