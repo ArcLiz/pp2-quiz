@@ -30,7 +30,7 @@ let myQuestions = [
     },
 ];
 
-window.onload = runQuiz();
+setTimeout(runQuiz, 1)
 
 // Function for the quiz itself
 
