@@ -53,7 +53,7 @@ function runQuiz() {
 
     // writing current player score
     let playerScore = document.getElementById("player-score");
-    playerScore.innerHTML = `You currently have ${userPoints} out of 15.`
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
 
     // delayed hint for if a user takes too long to answer the question
     function hint() {
@@ -72,7 +72,7 @@ function runQuiz() {
             playerClick();
         });
     }
-    clearTimeout(1);
+    clearTimeout(2);
 }
 
 // Function to read the results of player choice and move to the next question
@@ -101,7 +101,7 @@ function cleanUp() {
     altsClear.innerHTML = "";
 
     let playerScore = document.getElementById("player-score");
-    playerScore.innerHTML = `You currently have ${userPoints} out of 15.`
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
 }
 
 // Paus between questions if the user answered correctly
@@ -116,7 +116,10 @@ function correctFact() {
 
     setTimeout(cleanUp, 4999);
     now++
-    setTimeout(runQuiz, 5000);
+
+    if (now == myQuestions.length){
+        setTimeout(quizEnd, 5000)
+    } setTimeout(runQuiz, 5000);
 }
 
 // Paus between questions if the user answered incorrectly
@@ -131,5 +134,12 @@ function incorrectFact() {
 
     setTimeout(cleanUp, 4999);
     now++
-    setTimeout(runQuiz, 5000);
+
+    if (now == myQuestions.length){
+        setTimeout(quizEnd, 5000)
+    } setTimeout(runQuiz, 5000);
+}
+
+function quizEnd() {
+    location.href = "endpage.html"
 }
