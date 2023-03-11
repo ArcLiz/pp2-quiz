@@ -30,7 +30,6 @@ let myQuestions = [
     },
 ];
 
-setTimeout(runQuiz, 1)
 
 // Function for the quiz itself
 
@@ -75,6 +74,7 @@ function runQuiz() {
     clearTimeout(2);
 }
 
+
 // Function to read the results of player choice and move to the next question
 
 function playerClick() {
@@ -92,7 +92,9 @@ function playerClick() {
     }
 }
 
+
 // Tidyup and updating for all areas
+
 function cleanUp() {
     let questionClear = document.getElementById("questions");
     questionClear.innerHTML = "";
@@ -104,7 +106,9 @@ function cleanUp() {
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
 }
 
+
 // Paus between questions if the user answered correctly
+
 function correctFact() {
     console.log("Yay I answered correctly!")
     let congratulations = document.getElementById("questions");
@@ -122,7 +126,9 @@ function correctFact() {
     } setTimeout(runQuiz, 5000);
 }
 
+
 // Paus between questions if the user answered incorrectly
+
 function incorrectFact() {
     console.log("Oops I answered wrong")
     let condoleances = document.getElementById("questions");
@@ -139,6 +145,9 @@ function incorrectFact() {
         setTimeout(quizEnd, 5000)
     } setTimeout(runQuiz, 5000);
 }
+
+
+// Redirection to the final page
 
 function quizEnd() {
     location.href = "endpage.html"
