@@ -72,9 +72,21 @@ header p {
 
 #area-question {
     margin: auto;
-    padding: 5px;
     min-width: 320px;
     max-width: 600px;
+    background-color: #40afa9;
+    border: 2px dotted white;
+    border-radius: 25px;
+}
+
+#area-hints {
+    height: 1.8rem;
+}
+
+#hint {
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: -20px;
 }
 
 #area-alternatives {
@@ -102,14 +114,4 @@ header p {
 
 .active {
     background-color: lightgoldenrodyellow;
-}
-
-#area-hints {
-    height: 3rem;
-}
-
-#hint {
-    font-style: italic;
-    padding-bottom: 10px;
-    padding-top: -20px;
 }
