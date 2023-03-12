@@ -89,29 +89,37 @@ header p {
     padding-top: -20px;
 }
 
+/* ----- Styling for choice buttons*/
+
 #area-alternatives {
     margin: 20px auto;
     max-width: 400px;
     height: 400px;
-    display: grid;
-    grid-row: auto auto;
-    gap: 20px 20px;
 }
 
 .box {
     padding: 20px;
+    margin-bottom: 25px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 64px;
+    background-color: #cf6740;
+    box-shadow: -5px 5px #011e1c;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150%;
+    cursor: pointer;
 }
 
 .box:hover {
-    background-color: LightCyan;
+    background-color: #d98926;
+    height: 70px;
+    margin-bottom: 19px;
+    font-size: 160%;
 }
 
 .active {
-    background-color: lightgoldenrodyellow;
+    background-color: #ece98c;
 }
