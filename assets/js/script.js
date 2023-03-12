@@ -71,7 +71,7 @@ function runQuiz() {
             playerClick();
         });
     }
-    clearTimeout(2);
+    clearTimeout(1);
 }
 
 
@@ -101,6 +101,9 @@ function cleanUp() {
 
     let altsClear = document.getElementById("area-alternatives");
     altsClear.innerHTML = "";
+
+    let hintsClear = document.getElementById("hint");
+    hintsClear.innerHTML = "";
 
     let playerScore = document.getElementById("player-score");
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
