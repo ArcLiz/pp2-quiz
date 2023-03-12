@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@400&family=Caveat&family=Mulish:wght@300&family=Neonderthaw&family=Quattrocento+Sans&display=swap');
 
 /* Project Wide Styles ---------------------------- */
 
@@ -7,15 +7,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background: repeating-linear-gradient(45deg,
+            #00978e,
+            #00978e 13px,
+            #008d87 7px,
+            #008d87 20px);
 }
 
 h1 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Neonderthaw', cursive;
+    font-size: 2.8rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Caveat', cursive;
+
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
 }
 
 .text-center {
@@ -24,18 +41,31 @@ h2 {
 
 /** Site logo and title elements ******/
 
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
 hr {
     width: 320px;
     margin: 10px auto;
     border: 1px solid black;
 }
 
+#logo {
+    margin: auto;
+    width: 320px;
+}
 header h1 {
-    padding-top: 10px;
+    margin-bottom: -10px;
+    font-weight: normal;
 }
 
 header p {
     padding: 5px;
+    font-family: 'Phudu', cursive;
 }
 
 /** Game board **/
