@@ -131,6 +131,37 @@ header p {
     align-items: center;
 }
 
+/* -------- Fun Fact Styling*/
+
+#funfacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 400px;
+    height: 395px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #cf6740;
+    box-shadow: -5px 5px #011e1c;
+}
+
+#funfacts > h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 150%;
+}
+
+#funfacts > p {
+    font-size: 80%;
+    text-align: center;
+    padding: 10px 40px;
+}
+
 /* -------- Endpage Styling */
 
 #area-bye {

@@ -34,6 +34,12 @@ let myQuestions = [
 // Function for the quiz itself
 
 function runQuiz() {
+    // hide currently unused html elements
+    let showFacts = document.getElementById("area-alternatives");
+    showFacts.style.display = '';
+    let hideAlts = document.getElementById("funfacts");
+    hideAlts.style.display = "none";
+
     // writing the question
     let questionArea = document.getElementById("questions");
     questionArea.innerHTML = myQuestions[now].question;
@@ -113,13 +119,21 @@ function cleanUp() {
 // Paus between questions if the user answered correctly
 
 function correctFact() {
-    console.log("Yay I answered correctly!")
     let congratulations = document.getElementById("questions");
     congratulations.innerHTML = "Congratulations, you're absolutely right!";
 
-    let alternatives = document.getElementById('area-alternatives');
+    // hide currently unused html elements
+    let showFacts = document.getElementById("funfacts");
+    showFacts.style.display = '';
+    let hideAlts = document.getElementById("area-alternatives");
+    hideAlts.style.display = "none";
+
+    let alternatives = document.getElementById('ff-import');
     alternatives.innerHTML = myQuestions[now].funfact;
     console.log(myQuestions[now].funfact);
+
+    let playerScore = document.getElementById("player-score");
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
     setTimeout(cleanUp, 4999);
     now++
@@ -133,13 +147,21 @@ function correctFact() {
 // Paus between questions if the user answered incorrectly
 
 function incorrectFact() {
-    console.log("Oops I answered wrong")
     let condoleances = document.getElementById("questions");
     condoleances.innerHTML = "Oh no, it looks like you got this one wrong.";
 
-    let alternatives = document.getElementById('area-alternatives');
+    // hide currently unused html elements
+    let showFacts = document.getElementById("funfacts");
+    showFacts.style.display = '';
+    let hideAlts = document.getElementById("area-alternatives");
+    hideAlts.style.display = "none";
+
+    let alternatives = document.getElementById('ff-import');
     alternatives.innerHTML = myQuestions[now].funfact;
     console.log(myQuestions[now].funfact);
+
+    let playerScore = document.getElementById("player-score");
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
     setTimeout(cleanUp, 4999);
     now++
