@@ -48,12 +48,6 @@ header {
     padding-bottom: 10px;
 }
 
-hr {
-    width: 320px;
-    margin: 10px auto;
-    border: 1px solid black;
-}
-
 #logo {
     margin: auto;
     width: 320px;
@@ -122,4 +116,17 @@ header p {
 
 .active {
     background-color: #ece98c;
+}
+
+#area-scores {
+    background-color: #d98926;
+    width: 270px;
+    height: 50px;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: -5px 5px #011e1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
