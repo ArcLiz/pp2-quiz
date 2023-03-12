@@ -130,3 +130,75 @@ header p {
     justify-content: center;
     align-items: center;
 }
+
+/* -------- Endpage Styling */
+
+#area-bye {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #cf6740;
+    box-shadow: -5px 5px #011e1c;
+}
+
+#area-bye > h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 150%;
+}
+
+#area-bye > p {
+    font-size: 80%;
+    text-align: center;
+    padding: 10px 40px;
+}
+#grade {
+    background-color: #d98926;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grade > h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 200%;
+}
+
+#signature {
+    height: 50px;
+}
+
+#btn-repeat {
+    background-color: #d98926;
+    width: 270px;
+    height: 50px;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: -5px 5px #011e1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-repeat:hover {
+    background-color: #ece98c;
+    height: 53px;
+    margin-bottom: 19px;
+    font-size: 120%;
+    color: #cf6740;
+    font-weight: bold;
+}
