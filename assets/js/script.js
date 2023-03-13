@@ -207,3 +207,8 @@ function userGrade() {
         showResult.innerHTML = "Oh dear, it seems like we've never even met! Your score is like a stranger who accidentally stumbled upon my quiz. It's like we're living in different worlds, or maybe I'm just too complex for you to understand. Don't worry though, we can always start fresh and get to know each other better. Who knows, we might even become best friends one day!"
     }
 }
+
+function restart() {
+    location.href = "index.html"
+    localStorage.clear();
+}
