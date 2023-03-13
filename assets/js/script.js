@@ -54,11 +54,11 @@ function runQuiz() {
         newDiv.classList.add('box','alts');
 
         let front = document.createElement('div');
-        front.classList.add('front','text-center');
+        front.classList.add('front');
         front.innerHTML = qAlts[i];
         let back = document.createElement('div');
         back.classList.add('back');
-        back.innerHTML = `> ${qAlts[i]} <`;
+        back.innerHTML = qAlts[i];
         newDiv.appendChild(front);
         newDiv.appendChild(back);
 
@@ -77,7 +77,7 @@ function runQuiz() {
     setTimeout(hint, 10000);
 
     // Searching for user click on alternative
-    let choices = document.querySelectorAll("div.alts");
+    let choices = document.querySelectorAll("div.back");
 
     for (let i = 0; i < choices.length; i++) {
         choices[i].addEventListener('click', function () {
