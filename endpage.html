@@ -11,7 +11,7 @@
 
     <title>Quiz by Liz</title>
 </head>
-<body>
+<body onload="userGrade()">
     <!-- Header -->
     <header>
         <h1 class="text-center">the</h1>
@@ -28,11 +28,11 @@
         <div id="area-bye">
             <h3>Let's see how you did..</h3>
             <p id="final-score">Your final result was X out of X.</p>
-            <div id="grade"><h4>A</h4></div>
-            <p id="final-result">Wow, you really know me like the back of your hand! I'm starting to wonder if you're secretly a mind reader or if we've been friends in a past life. Your score is so high, it's like you've been stalking me on Instagram for months. Keep up the good work, you're definitely one of my closest confidants!</p>
+            <div><h4 id="grade"></h4></div>
+            <p id="final-result"></p>
             <img src="assets/media/my-signature.png" alt="lizahs signature" id="signature">
         </div>
-        <button type="submit" id="btn-repeat" onclick="window.location.href='index.html'">Let's go again!</button>
+        <button type="submit" id="btn-repeat" onclick="restart()">Let's go again!</button>
     </main>
 
     <!-- javascript file for quiz functions -->
