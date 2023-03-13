@@ -52,7 +52,16 @@ function runQuiz() {
 
         let newDiv = document.createElement('div');
         newDiv.classList.add('box','alts');
-        newDiv.innerHTML = qAlts[i];
+
+        let front = document.createElement('div');
+        front.classList.add('front','text-center');
+        front.innerHTML = qAlts[i];
+        let back = document.createElement('div');
+        back.classList.add('back');
+        back.innerHTML = `> ${qAlts[i]} <`;
+        newDiv.appendChild(front);
+        newDiv.appendChild(back);
+
         alternatives.appendChild(newDiv);
     }
 
@@ -66,7 +75,7 @@ function runQuiz() {
         hints.innerHTML = `Hint: ` + myQuestions[now].hint;
     }
     setTimeout(hint, 10000);
-    
+
     // Searching for user click on alternative
     let choices = document.querySelectorAll("div.alts");
 

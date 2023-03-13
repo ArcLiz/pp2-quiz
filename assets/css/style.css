@@ -83,7 +83,7 @@ header p {
     padding-top: -20px;
 }
 
-/* ----- Styling for choice buttons*/
+/* ----- Styling for choice buttons and flip card effects*/
 
 #area-alternatives {
     margin: 20px auto;
@@ -92,26 +92,49 @@ header p {
 }
 
 .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     margin-bottom: 25px;
     border: 1px solid black;
     border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 64px;
+
     background-color: #cf6740;
     box-shadow: -5px 5px #011e1c;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
     font-family: 'Bebas Neue', cursive;
     font-size: 150%;
     cursor: pointer;
 }
 
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
 .box:hover {
     background-color: #d98926;
-    height: 70px;
-    margin-bottom: 19px;
-    font-size: 160%;
+    transform: rotateY(0deg);
+}
+
+.box:hover .front {
+    transform: rotateY(180deg);
+}
+
+.box:hover .back {
+    transform: rotateY(0deg);
 }
 
 .active {
