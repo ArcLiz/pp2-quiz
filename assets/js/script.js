@@ -39,6 +39,8 @@ function runQuiz() {
     showFacts.style.display = '';
     let hideAlts = document.getElementById("funfacts");
     hideAlts.style.display = "none";
+    let hideHint = document.getElementById("hint");
+    hideHint.style.display = '';
 
     // writing the question
     let questionArea = document.getElementById("questions");
@@ -86,7 +88,7 @@ function runQuiz() {
             playerClick();
         });
     }
-    clearTimeout(1);
+    clearTimeout();
 }
 
 
@@ -128,6 +130,8 @@ function cleanUp() {
 // Paus between questions if the user answered correctly
 
 function correctFact() {
+    countDown();
+
     let congratulations = document.getElementById("questions");
     congratulations.innerHTML = "Congratulations, you're absolutely right!";
 
@@ -136,6 +140,8 @@ function correctFact() {
     showFacts.style.display = '';
     let hideAlts = document.getElementById("area-alternatives");
     hideAlts.style.display = "none";
+    let hideHint = document.getElementById("hint");
+    hideHint.style.display = "none";
 
     let alternatives = document.getElementById('ff-import');
     alternatives.innerHTML = myQuestions[now].funfact;
@@ -144,18 +150,16 @@ function correctFact() {
     let playerScore = document.getElementById("player-score");
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
-    setTimeout(cleanUp, 4999);
+    setTimeout(cleanUp, 9999);
     now++
-
-    if (now == myQuestions.length){
-        setTimeout(quizEnd, 5000)
-    } setTimeout(runQuiz, 5000);
 }
 
 
 // Paus between questions if the user answered incorrectly
 
 function incorrectFact() {
+    countDown();
+
     let condoleances = document.getElementById("questions");
     condoleances.innerHTML = "Oh no, it looks like you got this one wrong.";
 
@@ -164,6 +168,8 @@ function incorrectFact() {
     showFacts.style.display = '';
     let hideAlts = document.getElementById("area-alternatives");
     hideAlts.style.display = "none";
+    let hideHint = document.getElementById("hint");
+    hideHint.style.display = "none";
 
     let alternatives = document.getElementById('ff-import');
     alternatives.innerHTML = myQuestions[now].funfact;
@@ -172,24 +178,33 @@ function incorrectFact() {
     let playerScore = document.getElementById("player-score");
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
-    setTimeout(cleanUp, 4999);
+    setTimeout(cleanUp, 9999);
     now++
-
-    if (now == myQuestions.length){
-        setTimeout(quizEnd, 5000)
-    } setTimeout(runQuiz, 5000);
 }
 
-
-// Redirection to the final page
-
-function quizEnd() {
-    location.href = "endpage.html"
+/**
+ * Function for countdown during the waiting "fun facts" screen.
+ * Code adapted based on this source: 
+*/
+function countDown() {
+    document.getElementById("countdown").innerHTML = 10;
+    let i = 9;
+    let counter = setInterval(function() {
+        document.getElementById("countdown").innerHTML = i;
+        if (i === 0) {
+            if (now == myQuestions.length){
+                clearInterval(counter);
+                quizEnd();
+            } runQuiz();
+            clearInterval(counter);
+        }
+        else {
+            i--;
+        }
+    }, 1000);
 }
-
 
 //Function to calculate users final result and print appropriate text on final page
-
 function userGrade() {
     let userString = localStorage.getItem("userPoints")
     let userScore = parseInt(userString) || 0;
@@ -214,10 +229,6 @@ function userGrade() {
     gradeF.setAttribute('src', '../assets/media/grade-f.png')
     gradeF.setAttribute('alt', 'Image showing user grade to be an F')
 
-
-
-    console.log(userScore)
-
     showSum.innerHTML = `Your final score was ${userScore} out of ${myQuestions.length} points.`
 
     if (userScore >= 0.9 * myQuestions.length) {
@@ -233,6 +244,12 @@ function userGrade() {
         showGrade.innerHTML = gradeF.outerHTML;
         showResult.innerHTML = "Oh dear, it seems like we've never even met! Your score is like a stranger who accidentally stumbled upon my quiz. It's like we're living in different worlds, or maybe I'm just too complex for you to understand. Don't worry though, we can always start fresh and get to know each other better. Who knows, we might even become best friends one day!"
     }
+}
+
+// Redirections
+
+function quizEnd() {
+    location.href = "endpage.html"
 }
 
 function restart() {

@@ -146,6 +146,12 @@ header p {
     font-size: 150%;
 }
 
+h3 > span {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
 .fix-block > p {
     font-size: 80%;
     padding: 10px 40px;
