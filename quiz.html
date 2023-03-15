@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Challenge yourself with a quiz on ...">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/9289bd467b.js" crossorigin="anonymous"></script>
+
+    <title>Quiz by Liz</title>
+</head>
+<body onload="runQuiz()">
+    <!-- Header -->
+    <header>
+        <h1 class="text-center">the</h1>
+        <img src="assets/media/lizquiz-logo.png" alt="Sitelogo with text Liz Quiz" id="logo" >
+    </header>
+
+    <!-- Main content with Quiz and features -->
+    <main id="gameboard">
+        <div class="dotted-blue">
+            <h2 id="questions" class="text-center"></h2>
+            <div class="spc-height">
+                <p id="hint" class="text-center"></p>
+            </div>
+        </div>
+        <div id="funfacts" class="fix-block">
+            <h3>Next question is coming up soon...</h3>
+            <p>In the meanwhile though,</p>
+            <p id="ff-import"></p>
+        </div>
+        <div id="area-alternatives"></div>
+        <div id="area-scores">
+            <p id="player-score" class="text-center"></p>
+        </div>
+    </main>
+
+    <!-- javascript file for quiz functions -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

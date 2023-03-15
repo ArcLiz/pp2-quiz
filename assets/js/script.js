@@ -236,6 +236,6 @@ function userGrade() {
 }
 
 function restart() {
-    location.href = "index.html"
+    location.href = "quiz.html"
     localStorage.clear();
 }

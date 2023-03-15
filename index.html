@@ -7,34 +7,31 @@
     <meta name="description" content="Challenge yourself with a quiz on ...">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/9289bd467b.js" crossorigin="anonymous"></script>
 
     <title>Quiz by Liz</title>
 </head>
-<body onload="runQuiz()">
+<body>
+
     <!-- Header -->
     <header>
         <h1 class="text-center">the</h1>
-        <img src="assets/media/lizquiz-logo.png" alt="Sitelogo with text Liz Quiz" id="logo" >
+        <img src="assets/media/lizquiz-logo.png" alt="Sitelogo with text Liz Quiz" id="logo-big" >
+
+        <p class="text-center">Get ready for an epic battle,<br>to prove that you're a true liz wiz.<br><br>Do you have what it takes?</p>
     </header>
 
     <!-- Main content with Quiz and features -->
-    <main id="gameboard">
+    <main id="page-welcome">
         <div class="dotted-blue">
-            <h2 id="questions" class="text-center"></h2>
-            <div class="spc-height">
-                <p id="hint" class="text-center"></p>
-            </div>
+            <h2>How do I play?</h2>
+            <br>
+            <p class="txt-narrow">For each question, you'll be given a set of alternatives to choose from. If you take <em>a little bit too long</em> to answer, you'll be presented with a hint that might help you along.</p>
+            <p class="txt-narrow"><br>Once you've clicked on your chosen answer, you'll be presented with a quick fact about the question you've just answered before being taken to the next question.</p>
+            <p class="txt-narrow"><br>At the end of the quiz, you'll be presented with an assessment of how you did in the quiz and who knows,<br>There might even be a tip on where to go from here?</p>
+            <br>
+            <h2>Good luck!</h2>
         </div>
-        <div id="funfacts" class="fix-block">
-            <h3>Next question is coming up soon...</h3>
-            <p>In the meanwhile though,</p>
-            <p id="ff-import"></p>
-        </div>
-        <div id="area-alternatives"></div>
-        <div id="area-scores">
-            <p id="player-score" class="text-center"></p>
-        </div>
+        <button type="submit" class="btn-big" onclick="restart()">Start Quiz</button>
     </main>
 
     <!-- javascript file for quiz functions -->

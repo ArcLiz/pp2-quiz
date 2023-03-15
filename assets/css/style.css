@@ -44,7 +44,6 @@ p {
 }
 
 /* ------------  Project wide classes */
-
 .dotted-blue {
     margin: auto;
     min-width: 18rem;
@@ -52,8 +51,13 @@ p {
     background-color: #40afa9;
     border: 2px dotted white;
     border-radius: 25px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     margin-bottom: 1rem;
+}
+
+.dotted-blue > p {
+    padding: 0 1rem;
 }
 
 .spc-height {
@@ -80,7 +84,6 @@ p {
 }
 
 /* ------------  Site logo and title elements */
-
 header {
     display: flex;
     justify-content: center;
@@ -102,8 +105,14 @@ header p {
     font-family: 'Phudu', cursive;
 }
 
-/* ------------  Quiz - Main blocks (Game board) */
+/* ------------  Index - Welcome Page Elements */
+.txt-narrow {
+    max-width: 26rem;
+    text-align: left;
+    margin: auto;
+}
 
+/* ------------  Quiz - Main blocks (Game board) */
 #hint {
     font-style: italic;
 }
@@ -143,7 +152,6 @@ header p {
 }
 
 /* ------------  Quiz - Boxes - Answer Alternatives */
-
 .box {
     display: flex;
     align-items: center;
@@ -208,7 +216,6 @@ header p {
 }
 
 /* ------------  Final Page Elements **/
-
 #signature {
     height: 50px;
 }
