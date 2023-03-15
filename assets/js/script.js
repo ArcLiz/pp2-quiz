@@ -198,21 +198,39 @@ function userGrade() {
     let showGrade = document.getElementById('grade');
     let showResult = document.getElementById('final-result');
 
+    const gradeA = document.createElement('img');
+    gradeA.setAttribute('src', '../assets/media/grade-a.png')
+    gradeA.setAttribute('alt', 'Image showing user grade to be an A')
+
+    const gradeB = document.createElement('img');
+    gradeB.setAttribute('src', '../assets/media/grade-b.png')
+    gradeB.setAttribute('alt', 'Image showing user grade to be an B')
+
+    const gradeD = document.createElement('img');
+    gradeD.setAttribute('src', '../assets/media/grade-d.png')
+    gradeD.setAttribute('alt', 'Image showing user grade to be an D')
+
+    const gradeF = document.createElement('img');
+    gradeF.setAttribute('src', '../assets/media/grade-f.png')
+    gradeF.setAttribute('alt', 'Image showing user grade to be an F')
+
+
+
     console.log(userScore)
 
     showSum.innerHTML = `Your final score was ${userScore} out of ${myQuestions.length} points.`
 
     if (userScore >= 0.9 * myQuestions.length) {
-        showGrade.innerHTML = "A";
+        showGrade.innerHTML = gradeA.outerHTML;
         showResult.innerHTML = "Wow, you really know me like the back of your hand! I'm starting to wonder if you're secretly a mind reader or if we've been friends in a past life. Your score is so high, it's like you've been stalking me on Instagram for months. Keep up the good work, you're definitely one of my closest confidants!"
     } else if (userScore >= 0.7 * myQuestions.length) {
-        showGrade.innerHTML = "B";
+        showGrade.innerHTML = gradeB.outerHTML;
         showResult.innerHTML = "Great job, you definitely know a thing or two about me! Your score is like a glimpse into my personality, but there's still some mystery left to unravel. It's like we're starting to become friends, but we haven't quite exchanged phone numbers yet. Keep up the good work, you're on your way to earning a spot in my inner circle!"
     } else if (userScore >= 0.5 * myQuestions.length) {
-        showGrade.innerHTML = "E";
+        showGrade.innerHTML = gradeD.outerHTML;
         showResult.innerHTML = "Not bad, but not great either. Your score is like a distant acquaintance who occasionally pops up on my Facebook feed. You might know some of the basics, but there's definitely room for improvement if you want to earn a spot in my close circle of friends. Don't worry though, we can always grab coffee and catch up!"
     } else {
-        showGrade.innerHTML = "F";
+        showGrade.innerHTML = gradeF.outerHTML;
         showResult.innerHTML = "Oh dear, it seems like we've never even met! Your score is like a stranger who accidentally stumbled upon my quiz. It's like we're living in different worlds, or maybe I'm just too complex for you to understand. Don't worry though, we can always start fresh and get to know each other better. Who knows, we might even become best friends one day!"
     }
 }
