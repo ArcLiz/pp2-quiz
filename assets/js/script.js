@@ -5,6 +5,18 @@ let now = 0;
 
 let myQuestions = [
     {
+        question: 'On which holiday was I born?',
+        alts: [
+            'Christmas',
+            'Halloween',
+            'Midsummer',
+            'Easter',
+        ],
+        correct: 'Christmas',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
         question: 'Incredibly great placeholder question?',
         alts: [
             'Fascinating answer',
@@ -17,16 +29,124 @@ let myQuestions = [
         funfact: 'A synonym for correct is "right"',
     },
     {
-        question: 'Another cool example question?',
+        question: 'Incredibly great placeholder question?',
         alts: [
             'Fascinating answer',
-            'Wrong answer',
+            'Correct answer',
             'Crap answer',
-            'Right answer',
+            'Just wrong',
         ],
-        correct: 'Right answer',
-        hint: "Read the alternatives carefully.",
-        funfact: 'A synonym for right is "correct"',
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
+    },
+    {
+        question: 'Incredibly great placeholder question?',
+        alts: [
+            'Fascinating answer',
+            'Correct answer',
+            'Crap answer',
+            'Just wrong',
+        ],
+        correct: 'Correct answer',
+        hint: "The answer is in the wording.",
+        funfact: 'A synonym for correct is "right"',
     },
 ];
 
@@ -46,10 +166,21 @@ function runQuiz() {
     let questionArea = document.getElementById("questions");
     questionArea.innerHTML = myQuestions[now].question;
 
+    
+
     // creating the answer alternatives
     let alternatives = document.getElementById('area-alternatives');
 
     let qAlts = myQuestions[now].alts;
+
+        // code for shuffling the answer alternatives adapted from: https://stackoverflow.com/questions/49555273/how-to-shuffle-an-array-of-objects-in-javascript
+    for (var i = qAlts.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = qAlts[i];
+        qAlts[i] = qAlts[j];
+        qAlts[j] = temp;
+      }
+
     for (let i = 0; i < qAlts.length; i++) {
 
         let newDiv = document.createElement('div');
@@ -184,7 +315,7 @@ function incorrectFact() {
 
 /**
  * Function for countdown during the waiting "fun facts" screen.
- * Code adapted based on this source: 
+ * Code adapted based on this source: https://stackoverflow.com/questions/11075927/how-can-i-use-setinterval-or-settimeout-and-display-the-results-during-the-count/11075956#11075956
 */
 function countDown() {
     document.getElementById("countdown").innerHTML = 10;
