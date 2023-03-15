@@ -19,20 +19,20 @@
     </header>
     <!-- Main content with Quiz and features -->
     <main id="quiz-end">
-        <div id="area-question">
-            <h2 id="questions" class="text-center">Congratulations!</h2>
-            <div id="area-hints">
-                <p id="hint" class="text-center">You made it through the entire quiz.</p>
+        <div class="dotted-blue">
+            <h2 id="questions">Congratulations!</h2>
+            <div id="spc-height">
+                <p id="hint">You made it through the entire quiz.</p>
             </div>
         </div>
-        <div id="area-bye">
+        <div id="area-bye" class="fix-block">
             <h3>Let's see how you did..</h3>
             <p id="final-score">Your final result was X out of X.</p>
-            <div><h4 id="grade"></h4></div>
+            <div id="grade"></div>
             <p id="final-result"></p>
             <img src="assets/media/my-signature.png" alt="lizahs signature" id="signature">
         </div>
-        <button type="submit" id="btn-repeat" onclick="restart()">Let's go again!</button>
+        <button type="submit" class="btn-big" onclick="restart()">Let's go again!</button>
     </main>
 
     <!-- javascript file for quiz functions -->
