@@ -39,6 +39,11 @@ h3 {
     font-weight: normal;
 }
 
+h4 {
+    font-family: 'Phudu', cursive;
+    font-weight: normal;
+}
+
 p {
     font-size: 0.9rem; 
 }
