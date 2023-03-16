@@ -142,8 +142,8 @@ header p {
 
 #area-alternatives {
     margin: 20px auto;
-    max-width: 400px;
-    height: 400px;
+    max-width: 25rem;
+    height: 25rem;
 }
 
 .fix-block {
@@ -152,8 +152,8 @@ header p {
     align-items: center;
     flex-direction: column;
     margin: 20px auto;
-    max-width: 400px;
-    height: 400px;
+    max-width: 25rem;
+    height: 25rem;
     padding: 20px;
     margin-bottom: 25px;
     border: 1px solid black;
@@ -252,90 +252,178 @@ h3 > span {
 
 /* ------------  Media Queries **/
 
-@media screen and (max-width: 650px) {
-
+/* Small Phones */
+@media screen and (min-width: 280px) and (max-width: 375px) {
     body {
-        height: 100vh;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 5px;
-    }
-
-    header > h1 {
-        margin-top: -0.5rem;
-        font-size: 2rem;
-    }
-
-    header p {
-        padding: 0 5px;
-        font-family: 'Phudu', cursive;
+      font-size: 0.8rem;
     }
 
     #logo {
-        width: 10rem;
-    }
+        width: 15rem;
+      }
 
     #logo-big {
-        width: 18rem;
+        width: 15rem;
     }
 
-
-    div > h2 {
-        font-size: 1.3rem;
+    .txt-narrow {
+        font-size: small;
+        margin-bottom: 1rem;
     }
-
-    div > p {
-        font-size: 0.7rem;
+    h1 {
+        font-size: 2rem;
+        margin: -5px;
     }
 
     .dotted-blue {
-        max-width: 90vw;
+        margin: auto 3px;
     }
 
+    .dotted-blue > h2 {
+        font-size: x-large;
+    }
     #area-alternatives {
-        max-width: 85vw;
-        max-height: 50vh;
+        max-width: 20rem;
+        height: 50vh;
+        padding: 1rem;
     }
-
     .fix-block {
-        max-width: 85vw;
-        max-height: 50vh;
+      max-width: 20rem;
+      height: 40vh;
+      padding: 1rem;
     }
-    
     .fix-block > p {
-        font-size: 70%;
-        padding: 5px 10px;
+        font-size: 80%;
+        padding: 0 5px;
     }
-
     .box {
-        max-height: 7vh;
-        font-size: 0.8rem;
+        height: 3rem;
     }
 
     #area-scores {
-        max-width: 70vw;
-        max-height: 6vh;
+        max-width: 12rem;
+        height: 2.5rem;
     }
-    
-}
-@media screen and (max-width: 440px) {
+
+    #area-scores > p {
+        font-size: 80%;
+    }
+
     #grade {
         display: none;
     }
-}
 
-
-@media screen and (max-width: 319px) {
-    #logo-big {
-        width: 12rem;
+    .btn-big {
+        margin-top: 0.5rem;
     }
 
-    .dotted-blue {
-        max-width: 17rem;
+    .dotted-blue > .txt-narrow {
+        padding: 0 10px;
+    }
+    
+  }
+
+  /* Common Phones */ 
+  @media screen and (min-width: 376px) and (max-width: 767px) {
+    body {
+        font-size: 0.8rem;
+      }
+  
+      #logo {
+          width: 15rem;
+        }
+  
+      h1 {
+          font-size: 2rem;
+          margin: -5px;
+      }
+  
+      .dotted-blue {
+          margin: auto;
+      }
+  
+      .dotted-blue > h2 {
+          font-size: x-large;
+      }
+      #area-alternatives {
+          max-width: 20rem;
+          height: 40vh;
+      }
+      .fix-block {
+        max-width: 20rem;
+        height: 40vh;
+      }
+      .fix-block > p {
+          font-size: 80%;
+          padding: 0 5px;
+      }
+      .box {
+          height: 3rem;
+      }
+  
+      #area-scores {
+          max-width: 12rem;
+          height: 2.5rem;
+      }
+  
+      #area-scores > p {
+          font-size: 80%;
+      }
+  
+      #grade {
+          display: none;
+      }
+
+      .btn-big {
+        margin-top: 2rem;
+    }
+    }
+  
+/* Tablets */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 1.2rem;
+    }
+      #logo {
+          width: 25rem;
+        }
+  
+      h1 {
+          margin: -5px;
+      }
+  
+      .dotted-blue {
+          margin: auto;
+      }
+
+      .spc-height {
+        height: 4rem;
+      }
+      
+      #area-alternatives {
+          max-width: 60vw;
+          height: 50vh;
+      }
+      .fix-block {
+        max-width: 60vw;
+        height: 50vh;
+      }
+      .fix-block > p {
+          font-size: 80%;
+          padding: 0 5px;
+      }
+  
+      .box {
+        height: 5rem;
+      }
+
+      #area-scores > p {
+          font-size: 80%;
+      }
+
+      .btn-big {
+        margin-top: 2rem;
+        width: 20rem;
+        height: 3rem;
     }
 }
