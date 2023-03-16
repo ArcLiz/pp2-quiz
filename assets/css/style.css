@@ -148,7 +148,7 @@ header p {
 
 .fix-block {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     margin: 20px auto;
@@ -247,4 +247,95 @@ h3 > span {
 /* ------------  Final Page Elements **/
 #signature {
     height: 50px;
+}
+
+
+/* ------------  Media Queries **/
+
+@media screen and (max-width: 650px) {
+
+    body {
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    header > h1 {
+        margin-top: -0.5rem;
+        font-size: 2rem;
+    }
+
+    header p {
+        padding: 0 5px;
+        font-family: 'Phudu', cursive;
+    }
+
+    #logo {
+        width: 10rem;
+    }
+
+    #logo-big {
+        width: 18rem;
+    }
+
+
+    div > h2 {
+        font-size: 1.3rem;
+    }
+
+    div > p {
+        font-size: 0.7rem;
+    }
+
+    .dotted-blue {
+        max-width: 90vw;
+    }
+
+    #area-alternatives {
+        max-width: 85vw;
+        max-height: 50vh;
+    }
+
+    .fix-block {
+        max-width: 85vw;
+        max-height: 50vh;
+    }
+    
+    .fix-block > p {
+        font-size: 70%;
+        padding: 5px 10px;
+    }
+
+    .box {
+        max-height: 7vh;
+        font-size: 0.8rem;
+    }
+
+    #area-scores {
+        max-width: 70vw;
+        max-height: 6vh;
+    }
+    
+}
+@media screen and (max-width: 440px) {
+    #grade {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 319px) {
+    #logo-big {
+        width: 12rem;
+    }
+
+    .dotted-blue {
+        max-width: 17rem;
+    }
 }

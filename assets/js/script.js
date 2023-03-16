@@ -252,7 +252,7 @@ function correctFact() {
     countDown();
 
     let congratulations = document.getElementById("questions");
-    congratulations.innerHTML = "Congratulations, you're absolutely right!";
+    congratulations.innerHTML = "That is correct!";
 
     // hide currently unused html elements
     let showFacts = document.getElementById("funfacts");
@@ -280,7 +280,7 @@ function incorrectFact() {
     countDown();
 
     let condoleances = document.getElementById("questions");
-    condoleances.innerHTML = "Oh no, it looks like you got this one wrong.";
+    condoleances.innerHTML = "That's unfortunately wrong.";
 
     // hide currently unused html elements
     let showFacts = document.getElementById("funfacts");
