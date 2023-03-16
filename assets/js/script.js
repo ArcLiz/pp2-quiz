@@ -333,19 +333,19 @@ function userGrade() {
     let showResult = document.getElementById('final-result');
 
     const gradeA = document.createElement('img');
-    gradeA.setAttribute('src', '../assets/media/grade-a.png')
+    gradeA.setAttribute('src', 'assets/media/grade-a.png')
     gradeA.setAttribute('alt', 'Image showing user grade to be an A')
 
     const gradeB = document.createElement('img');
-    gradeB.setAttribute('src', '../assets/media/grade-b.png')
+    gradeB.setAttribute('src', 'assets/media/grade-b.png')
     gradeB.setAttribute('alt', 'Image showing user grade to be an B')
 
     const gradeD = document.createElement('img');
-    gradeD.setAttribute('src', '../assets/media/grade-d.png')
+    gradeD.setAttribute('src', 'assets/media/grade-d.png')
     gradeD.setAttribute('alt', 'Image showing user grade to be an D')
 
     const gradeF = document.createElement('img');
-    gradeF.setAttribute('src', '../assets/media/grade-f.png')
+    gradeF.setAttribute('src', 'assets/media/grade-f.png')
     gradeF.setAttribute('alt', 'Image showing user grade to be an F')
 
     showSum.innerHTML = `Your final score was ${userScore} out of ${myQuestions.length} points.`
