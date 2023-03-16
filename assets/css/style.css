@@ -88,6 +88,24 @@ p {
     font-weight: bold;
 }
 
+/* ------------  Site footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #011e1c;
+    text-align: center;
+    height: 5vh;
+}
+
+footer > a {
+    font-size: 150%;
+}
+
 /* ------------  Site logo and title elements */
 header {
     display: flex;
