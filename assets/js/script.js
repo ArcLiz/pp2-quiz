@@ -106,7 +106,7 @@ let myQuestions = [
             'The band CAMINO',
             'Rascal Flatts',
             'Dirty Loops',
-            'Just wrong',
+            'Queen',
         ],
         correct: 'Rascal Flatts',
         hint: "Feels like today.",
@@ -123,18 +123,6 @@ let myQuestions = [
         correct: 'Watching TV Show Glee',
         hint: "Not you, not me, but",
         funfact: "I'm a real sucker for Glee.<br><br>I honestly have no idea how many times I've seen the show in its entirety. It's just the perfect mix of silly feel good music and important anti bullying.. /shrug",
-    },
-    {
-        question: 'Which of these compulsions must I always do?',
-        alts: [
-            'Drink in sips of 5',
-            'Lock the door 3 times',
-            'Tap 2 times on books',
-            'Begin stairs with right foot',
-        ],
-        correct: 'Drink in sips of 5',
-        hint: "Don't run out.",
-        funfact: "I always drink in sips of 5.<br><br>When it comes to water, this is quite alright. However, as you can imagine, there are other beverages that can be slightly more problematic.",
     },
 ];
 
