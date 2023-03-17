@@ -95,22 +95,21 @@ At project inception I've found that losely sketching wireframes using pen and p
 
 #### Design
 I decided on an overall gameshow inspired look for the site. [This image](https://www.mercatshoppingcentre.co.uk/wp-content/uploads/2019/06/BW7222-Mercat-Gameshow-Giveaway-Web-Banner.jpg) was used as a reference and both background and color scheme is developed based on the reference image.
-##### Color Scheme
+##### Colour Scheme
 The original color scheme was picked based on the above reference picture.
 ![Original Colors](docs/colors-original.png)
 <br>However, after testing the site with WAVE, I had to adapt the Color Scheme to make the site more accessibility friendly in terms of contrast between foreground and background.
 ![Adapted Colors](docs/colors-contrastfix.png)
-Insert original colors picked from the reference pictures along with the final colors after the contrast errors from WAVE has been dealt with.
 
 ##### Typography
-The fonts combinations used for the site are chosen both with the original reference image in mind, as well as the site goal of providing a fun and entertaining design. The site fonts are; 
-* Neonderthaw, which is used for the header within the logo
+The font combinations used for the site are chosen both with the original reference image in mind, as well as the site goal of providing a fun and entertaining design. The site fonts are; 
+* Neonderthaw, which is used for the heading within the logo
 * Caveat, which is used for the questions
-* Phudu, which is used for all important text and subtitles (e.g. answer alternatives)
+* Phudu, which is used for all important text and subtitles _(e.g. answer alternatives)_
 * Mulish, used for all general body text
 
 ##### Imagery
-All images used within the project are created for the sole purpose of making the quiz feel personalized and interactive. 
+All images used within the project are custom made for the sole purpose of making the quiz feel personalized and interactive. 
 * A logo designed to further the gameshow aesthetics of the overall site
 * An image mimicing a grade stamp showing the users final result
 * An image of the site owners signature for a personal touch
@@ -128,7 +127,7 @@ The header has two variations across the site.
 
 ### Footer
 ![Footer](docs/sitefooter.png)
-The footer is global across all site pages in order to keep the site looking uniform and for the user to always have access to the social media icon(s) it contains.
+* Global across all site pages in order to keep the site looking uniform and for the user to always have access to the social media icon(s) it contains.
 * Contains a clickable link (opens in new window) to my GitHub profile.
 
 ### Welcome Page (index.html)
@@ -184,7 +183,7 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
 #### User Results
 ![Result Screen](docs/endpage-userresults.png)
 * Provides the user with a general overview of how they did in the quiz
-* Grade Stamp that varies depending on user score, for interactive design
+* Grade Stamp that varies depending on user score, for an interactive design
 * Reaction text that changes depending on user score, for a personal touch
 * Image of a hand written signature, to improve the playful aesthetics
 
@@ -194,7 +193,7 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
 
 #### 404 Page
 ![404 Page View](docs/404-page.png)
-* Custom 404 Page to provide users with a convenient way of getting back to the quiz, should they somehow have ended up on a broken site url. This to further improve site navigation
+* Custom 404 Page to provide users with a convenient way of getting back to the quiz, should they end up on a broken site url. This to further improve site navigation
 
 ## Future Enhancements
 * Page for High Scores
@@ -204,7 +203,7 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
 
 ## Testing
 ### Feature Testing
-All features have been tested throughout the development of the site on multiple devices and web browsers, the devices and browser compatibility results can be found [here](#compatibility).<br>Feature testing was documented in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Gk8tvlfY2lF0t9_arwPzlppYYVhldI1SxWR479EjORk/edit?usp=sharing).
+All features have been tested throughout the development of the site on multiple devices and web browsers, the devices and browser compatibility results can be found [here](#compatibility).<br>Feature testing was documented in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Gk8tvlfY2lF0t9_arwPzlppYYVhldI1SxWR479EjORk/edit?usp=sharing), which can be seen below.
 ![Excel Sheet of Tests](docs/featuretesting.png)
 
 ### Validator Testing
