@@ -116,6 +116,10 @@ All images used within the project are created for the sole purpose of making th
 * An image of the site owners signature for a personal touch
 
 ## Features
+
+### Favicon
+![Larger Image](assets/favicon/android-chrome-192x192.png)![Image of Favicon](assets/favicon/favicon-32x32.png)
+* The Favicon is created to make the site feel more professional and finished
 ### Header (Logo)
 ![Header with logo](docs/siteheader.png)
 The header has two variations across the site.
@@ -132,11 +136,11 @@ The welcome page in its entirety can be seen [here](docs/welcome-wholeview.png).
 
 #### Instructions
 ![Instruction Element](docs/welcome-text.png)
-* Some text here
+* A text describing the quiz functionality to the user, in accordance with User Story (#1, #2)
 
 #### Start Quiz-button
 ![Button to Start Quiz](docs/welcome-startquiz.png)
-* Some text here
+* A self explanatory button for the user to click in order to start the quiz, for easy site navigation, in accordance with User Story (#1)
 
 ### The Quiz Page (quiz.html)
 The quiz page in its entirety can be seen [here](docs/quiz-wholeview.png).
@@ -188,6 +192,10 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
 ![Restart Button](docs/endpage-restart.png)
 * Button to allow the user to take the quiz again
 
+#### 404 Page
+![404 Page View](docs/404-page.png)
+* Custom 404 Page to provide users with a convenient way of getting back to the quiz, should they somehow have ended up on a broken site url. This to further improve site navigation
+
 ## Future Enhancements
 * Page for High Scores
   * It would be fun to have a high scores page for the site, so that users can see how they measure up to others
@@ -196,7 +204,7 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
 
 ## Testing
 ### Feature Testing
-All features have been tested throughout the development of the site on multiple devices and web browsers, the devices and browser compatibility results can be found [here](#compatibility).<br>Attached is a spreadsheet detailing the outcome of all feature testing.
+All features have been tested throughout the development of the site on multiple devices and web browsers, the devices and browser compatibility results can be found [here](#compatibility).<br>Feature testing was documented in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Gk8tvlfY2lF0t9_arwPzlppYYVhldI1SxWR479EjORk/edit?usp=sharing).
 ![Excel Sheet of Tests](docs/featuretesting.png)
 
 ### Validator Testing
