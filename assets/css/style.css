@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@400&family=Caveat&family=Mulish:wght@300&family=Neonderthaw&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@400&family=Caveat&family=Mulish:wght@300;400;500;600&family=Neonderthaw&family=Quattrocento+Sans&display=swap');
 
 /* ------------  General Body Styles */
 * {
@@ -53,7 +53,7 @@ p {
     margin: auto;
     min-width: 18rem;
     max-width: 35rem;
-    background-color: #40afa9;
+    background-color: #007772;
     border: 2px dotted white;
     border-radius: 25px;
     padding-bottom: 0.5rem;
@@ -63,6 +63,7 @@ p {
 
 .dotted-blue > p {
     padding: 0 1rem;
+    font-weight: 600;
 }
 
 .spc-height {
@@ -70,7 +71,7 @@ p {
 }
 
 .btn-big {
-    background-color: #d98926;
+    background-color: #b1620a;
     width: 10rem;
     height: 2.3rem;
     margin: auto;
@@ -158,7 +159,7 @@ header p {
     margin-bottom: 25px;
     border: 1px solid black;
     border-radius: 15px;
-    background-color: #cf6740;
+    background-color: #c74e2d;
     box-shadow: -5px 5px #011e1c;
 }
 
@@ -191,7 +192,7 @@ h3 > span {
     border-radius: 15px;
     height: 64px;
 
-    background-color: #cf6740;
+    background-color: #c74e2d;
     box-shadow: -5px 5px #011e1c;
     perspective: 1000px;
 }
@@ -232,7 +233,7 @@ h3 > span {
 }
 
 #area-scores {
-    background-color: #d98926;
+    background-color: #b1620a;
     width: 270px;
     height: 50px;
     margin: auto;
@@ -242,6 +243,10 @@ h3 > span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#area-scores > p {
+    text-shadow: 1px 1px 2px #011e1c;
 }
 
 /* ------------  Final Page Elements **/
