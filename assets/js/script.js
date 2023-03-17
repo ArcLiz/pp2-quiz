@@ -390,9 +390,3 @@ const startQuizButton = document.getElementById("start-quiz");
 startQuizButton.addEventListener("click", function () {
     restart();
 });
-
-// const restartQuizButton = document.getElementById("restart-quiz");
-
-// restartQuizButton.addEventListener("click", function () {
-//     restart();
-// });

@@ -206,20 +206,27 @@ All features have been tested throughout the development of the site on multiple
   * No errors were returned when passing the code through the JSHint Evaluation Tool.<br>However, one warning was noted but ignored as the code is developed based on [CI material](docs/CI-forloops.png).<br>![View Image of Report](docs/jshint-results.png)
 
 * WAVE Web Accessibility
-  * Outcome of WAVE Evaluation ![View Image of Report](link/to/image)
+  * No errors were returned when using WAVE Evaluation tool to evaluate the page. There were a few contrast errors with body text on lighter backgrounds, which was corrected by changing the background colors slightly. ![View Image of Report](docs/wave-results.png)
 
 * Lighthouse 
-  * Outcome of Lighthouse Evaluation ![View Image of Report](link/to/image)
+  * The lighthouse report gave a great score for all site pages. <br>![View Image of Report for Index.html](docs/lighthouse-index.png)<br>![View Image of Report for Quiz.html](docs/lighthouse-quiz.png)<br>![View Image of Report for Endpage.html](docs/lighthouse-endpage.png)
 
 ### Compatibility
-The site is fully responsive and all features and functions has been tested on the following devices and web browsers:
+The site is fully responsive and all features and functions has been tested in Google Chrome Developer Tools simulations for popular phones running android, older iPhone versions and different screen sizes as well as on the following physical devices and web browsers:
 
-* Device
-  * Browser
-  * Browser
-* Device
-  * Browser
-  * Browser
+* PC with Windows 10
+  * Google Chrome
+  * Mozilla Firefox
+  * Microsoft Edge
+* iPhone 12
+  * Safari
+  * Google Chrome
+* iPad 2019
+  * Safari
+  * Google Chrome
+* iPhone SE
+  * Safari
+  * Google Chrome
 
 ## Deployment
 
