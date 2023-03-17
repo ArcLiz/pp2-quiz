@@ -1,7 +1,8 @@
 # The Liz Quiz
 ## Introduction
 The Liz Quiz is a web based quiz game created to provide users with a fun way to test their current knowledge about me at the same time as they are learning things about me the user was not aware of before partaking in the quiz.<br>
-The Quiz is built in JavaScript, HTML and CSS.
+The Quiz is built in JavaScript, HTML and CSS.<br>
+<br>
 ![Multi-Mockup](docs/multi-mockup.png)
 
 [View the project here](https://arcliz.github.io/pp2-quiz/) - *Please note: To open any links in this document in a new browser tab, please press CTRL + Click.*
