@@ -240,6 +240,9 @@ The site is fully responsive and all features and functions has been tested in G
   * Safari
   * Google Chrome
 
+### Known Bugs
+On a few occasions the quiz has gotten stuck between questions on mobile devices. When trying to replicate the problem in order to trouble shoot, the issue didn't present itself. I believe the issue was resolved when the runQuiz function was moved from the html body onload to eventListeners within the JavaScript file, but due to the problem only presenting a few times, I can not be completely certain of this.
+
 ## Deployment
 
 The site was deployed by using GitHub pages. The steps to deploy are as follows:
