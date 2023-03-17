@@ -1,84 +1,194 @@
-# Project Title
+# The Liz Quiz
 ## Introduction
-Quick introduction about what the project is, what its intended purpose is and how it has been built.
-![Multi-Mockup](link/to/image)
+The Liz Quiz is a web based quiz game created to provide users with a fun way to test their current knowledge about me at the same time as they are learning things about me the user was not aware of before partaking in the quiz.<br>
+The Quiz is built in JavaScript, HTML and CSS.
+![Multi-Mockup](docs/multi-mockup.png)
 
-[View the project here](url-to-project) - *Please note: To open any links in this document in a new browser tab, please press CTRL + Click.*
+[View the project here](https://arcliz.github.io/pp2-quiz/) - *Please note: To open any links in this document in a new browser tab, please press CTRL + Click.*
 
 ## Table of Contents
-* [Heading 2 (##)](#Heading)
-    * [Heading 3 (###)](#Heading)
-        * [Heading 4 (####)](#Heading)
-* [Heading 2 (##)](#Heading)
-    * [Heading 3 (###)](#Heading)
-        * [Heading 4 (####)](#Heading)
-* [Heading 2 (##)](#Heading)
-    * [Heading 3 (###)](#Heading)
-        * [Heading 4 (####)](#Heading)
+* [User Experience Design (UX)](#UX)
+    * [The Strategy Plane](#The-Strategy-Plane)
+        * [Site Goals](#Site-Goals)
+        * [User Stories](#User-Stories)
+    * [The Scope Plane](#The-Scope-Plane)
+    * [The Structure Plane](#The-Structure-Plane)
+    * [The Skeleton Plane](#The-Skeleton-Plane)
+        * [Wireframes](#Wireframe-mockups)
+    * [The Surface Plane](#The-Surface-Plane)
+        * [Design](#Design)
+            * [Colour Scheme](#Colour-Scheme)
+            * [Typography](#Typography)
+            * [Imagery](#imagery)            
+* [Features](#features)
+* [Future Enhancements](#future-enhancements)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 ## UX
 ### The Strategy Plane
-The reason for the product, application, or the site, why It's been created, who it's created for, why people will want to use it/need it. 
+The Liz Quiz is developed as an entertaining tool for users to get to know sides and facts about me and my life that might not commonly be known or ever mentioned in normal conversation. <br>The Quiz is developed with aquaintances and friends in mind as the target user group, as a fun game to use to both test their knowledge about me as well as getting to know new things about my life.
 
 #### Site Goals
-List of goals for the project from the site creator/business owners point of view, e.g.
-* To provide users with a good service
-* To provide users with a simple design
-* To ensure the content is interesting
-* To ensure the site is well structured
+* To provide users with an easy to understand quiz
+* To provide users with a fun design
+* To ensure the content is interesting as well as entertaining
+* To ensure the site is accessible to all potential users
 
 #### User Stories
-List of things the site users are looking for, e.g.
-* As a user I want a site with a good navigation menu
-* As a user I want to be able to contact the site owner
-* As a user I want a screen reader friendly page
-* As a user I want to be able to visit the page on any device
+* As a user, I want a site with easy to understand navigation
+* As a user, I want the game to be fun and easy to play
+* As a user, I want to learn new things about Liz
+* As a user, I want feedback for my answers and results
 
 ### The Scope Plane
-The function and content requirements. What are the features and content needed in order to fulfill what has been set out within the strategic goals?
-* First Feature
-* Second Feature
-* Third Feature
+In order for the site to provide the user with the functionality and experience set out in the Site Goals and User Stories, I plan to include the following features:
+* Information on how the Quiz works
+* A multiple choice Quiz
+* Hints for each question that shows on a timer, should a user take too long to answer
+* A fun fact related to each question
+* A final results screen informing the user on how they did on the quiz
 
 ### The Structure Plan
-Defining how the user will interact with the project and how the site is managed in relation to the User Stories.
 
-User Story:
-> As a user, ..
+User Story (#1):
+> As a user, I want a site with easy to understand navigation
 
 Implementation:
-* What has been done to incorporate the user story into the implementation of specific features/content.
+* The site will be divided into multiple pages to limit information
+
+User Story (#2):
+> As a user, I want the game to be fun and easy to play
+
+Implementation:
+* The quiz content will be unexpected and entertaining
+* The quiz will run on javascript animations so that the user interaction required is minimized
+
+User Story (#3):
+> As a user, I want to learn new things about Liz
+
+Implementation:
+* The quiz will provide additional question related facts
+
+User Story (#4):
+> As a user, I want feedback for my answers and results
+
+Implementation:
+* The site will include score tracking, direct and final result information
 
 ### The Skeleton Plane
-Determine and describe the visual form on the screen. The presentation and arrangement of elements. How does the user move through information, is the information presented in an effective, clear and obvious way?
 
 #### Wireframe mockups
-Have you created wireframes, if so - how? (What medium was used)<br>
-Describe any challenges and thought processes during the creation of wireframes. When creating wireframes, questions that are good to ask oneself is "What visual form of all things will be presented on screen? How will interactions be presented and arranged? How will users move around the site or application? How will content be presented in a clear way?
+At project inception I've found that losely sketching wireframes using pen and paper is easier while trying out different content layouts. Once I felt decided on a general look, I used Balsamiq to clean up my ideas and in that, also create more presentable wireframes.
 
-![Project Wireframes](link/to/image)
+#### Index Page
+![Index Wireframes](docs/wireframe-welcomepage.png)
+
+#### Quiz Page
+![Index Wireframes](docs/wireframe-quizpage.png)
+
+#### Quiz Page
+![Index Wireframes](docs/wireframe-endpage.png)
 
 ### The Surface Plane
-Determine and describe the visual design (sensory design). Color schemes, Typography, Imagery etc.
+
 #### Design
-##### Imagery
-Any and all images used as reference, backgrounds, hero images...
-##### Color Schemes
-How the color scheme was decided upon (tools, references), what colors are being used and why.
+I decided on an overall gameshow inspired look for the site. [This image](https://www.mercatshoppingcentre.co.uk/wp-content/uploads/2019/06/BW7222-Mercat-Gameshow-Giveaway-Web-Banner.jpg) was used as a reference and both background and color scheme is developed based on the reference image.
+##### Color Scheme
+Insert original colors picked from the reference pictures along with the final colors after the contrast errors from WAVE has been dealt with.
+
 ##### Typography
-How the font combinations was decided upon (tools, references), what fonts are being used and why.
+The fonts combinations used for the site are chosen both with the original reference image in mind, as well as the site goal of providing a fun and entertaining design. The site fonts are; 
+* Neonderthaw, which is used for the header within the logo
+* Caveat, which is used for the questions
+* Phudu, which is used for all important text and subtitles (e.g. answer alternatives)
+* Mulish, used for all general body text
+
+##### Imagery
+All images used within the project are created for the sole purpose of making the quiz feel personalized and interactive. 
+* A logo designed to further the gameshow aesthetics of the overall site
+* An image mimicing a grade stamp showing the users final result
+* An image of the site owners signature for a personal touch
 
 ## Features
-Names, screenshots and descriptions of all the features.
-### Project Wide Features
-e.g. Logo, Navigation Menu, Footer
-### Features per page (if relevant)
-e.g. Contact Form, About Section, Gallery
+### Header (Logo)
+![Header with logo](docs/siteheader.png)
+The header has two variations across the site.
+* **The Index Page** <br>The header has a larger image along with a witty call to action for users to want to partake in the quiz
+* **The Quiz and End Pages** <br>The header has a smaller image alone in order to minimize page content so that the user focus is directed to the important content
+
+### Footer
+![Footer](docs/sitefooter.png)
+The footer is global across all site pages in order to keep the site looking uniform and for the user to always have access to the social media icon(s) it contains.
+* Contains a clickable link (opens in new window) to my GitHub profile.
+
+### Welcome Page (index.html)
+The welcome page in its entirety can be seen [here](docs/welcome-wholeview.png).
+
+#### Instructions
+![Instruction Element](docs/welcome-text.png)
+* Some text here
+
+#### Start Quiz-button
+![Button to Start Quiz](docs/welcome-startquiz.png)
+* Some text here
+
+### The Quiz Page (quiz.html)
+The quiz page in its entirety can be seen [here](docs/quiz-wholeview.png).
+
+#### Questions and Hints
+![Area for Questions and Hints](docs/quiz-questionarea.png)
+* Unexpected, tricky and entertaining questions and hints are presented to make the quiz more fun, in accordance with User Story (#2)
+* The question is presented to the user as soon as the page loads
+* The hint is displayed after 10 seconds, should the user not already have answered the question
+
+#### Multiple Choice Alternatives
+![Boxes for Choice Alternatives](docs/quiz-alternatives.png)
+* Flip card animated boxes showing the users alternatives
+* The user click automatically processes the answer and takes the user to the next screen (without the need for a 'Next Question' button) for minimally required user interaction, in accordance with User Story (#2)
+
+#### Score Tracker
+![Current Score Tracker](docs/quiz-scoretracker.png)
+* Provides the user with their current score whilst progressing through the quiz, in accordance to User Story (#4)
+
+### Fun Fact Page (quiz.html)
+The fun fact page in its entirety can be seen [here](docs/funfact-wholeview.png).
+
+#### Question Results
+![Question Result Box](docs/funfact-correctanswer.png)
+![Question Result Box](docs/funfact-incorrectanswer.png)
+* Box showing if the user answered the previous question correct or not
+* Provides immediate feedback to the user, in accordance with User Story (#4)
+
+#### Fun Fact Box
+![Fun Fact Box](docs/funfact-mainblock.png)
+* Provides user with the correct answer, in accordance with User Story (#3)
+* Provides the user with additional fact related to the previous question, in accordance with User Story (#3)
+
+#### Countdown Timer
+![Countdown Timer](docs/funfact-countdown.png)
+* Provides clear information regarding site navigation to the user, in accordance with User Story (#1)
+
+### The Final Results (endpage.html)
+The final results page in its entirety can be seen [here](docs/endpage-wholeview.png).
+
+#### User Results
+![Result Screen](docs/endpage-userresults.png)
+* Provides the user with a general overview of how they did in the quiz
+* Grade Stamp that varies depending on user score, for interactive design
+* Reaction text that changes depending on user score, for a personal touch
+* Image of a hand written signature, to improve the playful aesthetics
+
+#### Restart Quiz-button
+![Restart Button](docs/endpage-restart.png)
+* Button to allow the user to take the quiz again
 
 ## Future Enhancements
-List of any features that should, could or might be implemented in the future.
-* Name of Feature
-  * Description of Feature and reason for why it might be added
+* Page for High Scores
+  * It would be fun to have a high scores page for the site, so that users can see how they measure up to others
+* Share Your Results-feature
+  * It would be fun to have a share results-button, similar to the one found on [10FastFingers](docs/share-results.png).
 
 ## Testing
 Documentation of all tests that has been done on the project.
@@ -153,7 +263,8 @@ The project will now be on your local machine to use or save. This can be a good
 - [GitHub](https://github.com/) - Used to store the code throughout the development
 - **Git** - Used for version control during the different project stages.
 - [Favicon.io](https://favicon.io/) - Used to generate the favicon used for the site
-- [TinyPNG](https://tinypng.com/) - Used to compress image files for faster load times
+- [Convertio](https://convertio.co/png-webp/) - Used to convert png files to webp for faster load times 
+- [TinyPNG](https://tinypng.com/) - Used to compress image files to further increase load times
 - [W3Schools](https://www.w3schools.com/) - Used to find solutions and inspiration for the creation of both HTML and CSS elements site wide
 
 
@@ -169,6 +280,5 @@ Any media used that is taken from a third party.
 * Image used as ... was found on [Title](url/to/page)
 
 ### Acknowledgements
-Individuals worthy of special mention.
-* Person 1 - For...
-* Person 2 - For...
+* My course mentor Daisy Mc Girr, who has been guiding me through the project with suggestions and helpful information
+* My fellow classmate Jonatan Knut von Sydow, who has provided suggestions and feedback regarding design, helped with testing and contributed to quiz content
