@@ -191,19 +191,19 @@ The final results page in its entirety can be seen [here](docs/endpage-wholeview
   * It would be fun to have a share results-button, similar to the one found on [10FastFingers](docs/share-results.png).
 
 ## Testing
-Documentation of all tests that has been done on the project.
 ### Feature Testing
-![Excel Sheet of Tests](link/to/image)
+All features have been tested throughout the development of the site on multiple devices and web browsers, the devices and browser compatibility results can be found [here](#compatibility).<br>Attached is a spreadsheet detailing the outcome of all feature testing.
+![Excel Sheet of Tests](docs/featuretesting.png)
 
 ### Validator Testing
 * HTML
-  * Outcome of HTML Validator Evaluation ![View Image of Report](link/to/image)
+  * No errors were returned when passing the code through the official W3C Validator. <br>However, one warning was noted in regards to the quiz.html <br>![View Image of Report](docs/html-quiz.png)<br>This h2 element is populated using JavaScript to insert the questions located in my questions array. When asking my mentor, she said that I could ignore the warning.
 
 * CSS
-  * Outcome of CSS Jigsaw Evaluation ![View Image of Report](link/to/image)
+  * No errors were returned when passing the code through the official CSS Jigsaw Evaluation ![View Image of Report](docs/css-results.png)
 
 * JavaScript
-  * Outcome of JSHint Evaluation ![View Image of Report](link/to/image)
+  * No errors were returned when passing the code through the JSHint Evaluation Tool.<br>However, one warning was noted but ignored as the code is developed based on [CI material](docs/CI-forloops.png).<br>![View Image of Report](docs/jshint-results.png)
 
 * WAVE Web Accessibility
   * Outcome of WAVE Evaluation ![View Image of Report](link/to/image)
@@ -211,7 +211,7 @@ Documentation of all tests that has been done on the project.
 * Lighthouse 
   * Outcome of Lighthouse Evaluation ![View Image of Report](link/to/image)
 
-### Compability
+### Compatibility
 The site is fully responsive and all features and functions has been tested on the following devices and web browsers:
 
 * Device
