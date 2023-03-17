@@ -96,6 +96,10 @@ At project inception I've found that losely sketching wireframes using pen and p
 #### Design
 I decided on an overall gameshow inspired look for the site. [This image](https://www.mercatshoppingcentre.co.uk/wp-content/uploads/2019/06/BW7222-Mercat-Gameshow-Giveaway-Web-Banner.jpg) was used as a reference and both background and color scheme is developed based on the reference image.
 ##### Color Scheme
+The original color scheme was picked based on the above reference picture.
+![Original Colors](docs/colors-original.png)
+<br>However, after testing the site with WAVE, I had to adapt the Color Scheme to make the site more accessibility friendly in terms of contrast between foreground and background.
+![Adapted Colors](docs/colors-contrastfix.png)
 Insert original colors picked from the reference pictures along with the final colors after the contrast errors from WAVE has been dealt with.
 
 ##### Typography
@@ -270,21 +274,23 @@ The project will now be on your local machine to use or save. This can be a good
 - [GitHub](https://github.com/) - Used to store the code throughout the development
 - **Git** - Used for version control during the different project stages.
 - [Favicon.io](https://favicon.io/) - Used to generate the favicon used for the site
+- [FontAwesome](https://fontawesome.com/) - Used for Github icon in the footer 
 - [Convertio](https://convertio.co/png-webp/) - Used to convert png files to webp for faster load times 
 - [TinyPNG](https://tinypng.com/) - Used to compress image files to further increase load times
-- [W3Schools](https://www.w3schools.com/) - Used to find solutions and inspiration for the creation of both HTML and CSS elements site wide
-
+- [W3Schools](https://www.w3schools.com/) - Used to find solutions and inspiration for the creation of HTML, CSS and JS elements site wide
+- [StackOverflow](https://stackoverflow.com/) - Used as inspiration and a general knowledge base
 
 ## Credits
 
 ### Content
-* All text content was created by X
-* Code snippit was found on [Title](url/to/page)
+* All text content was created by me, with some input and suggestions from friends
+* Code to style background with diagonal stripes were found on [CSS-Tricks](https://css-tricks.com/stripes-css/)
+* Code to shuffle alternative answers was found in a post from [Stack Overflow](https://stackoverflow.com/questions/49555273/how-to-shuffle-an-array-of-objects-in-javascript)
+* Code for countdown timer was based on a post from [Stack Overflow](https://stackoverflow.com/questions/11075927/how-can-i-use-setinterval-or-settimeout-and-display-the-results-during-the-count/11075956#11075956)
+
 
 ### Media
-Any media used that is taken from a third party.
-* Image used as ... was found on [Title](url/to/page)
-* Image used as ... was found on [Title](url/to/page)
+* All images used were created by me using [Photoshop CC](https://www.adobe.com/products/photoshop.html) and [Jump Paint](https://medibangpaint.com/en/jumppaint/)
 
 ### Acknowledgements
 * My course mentor Daisy Mc Girr, who has been guiding me through the project with suggestions and helpful information
