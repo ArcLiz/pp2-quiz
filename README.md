@@ -50,7 +50,7 @@ In order for the site to provide the user with the functionality and experience 
 * A fun fact related to each question
 * A final results screen informing the user on how they did on the quiz
 
-### The Structure Plan
+### The Structure Plane
 
 User Story (#1):
 > As a user, I want a site with easy to understand navigation

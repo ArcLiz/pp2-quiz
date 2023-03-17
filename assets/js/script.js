@@ -188,7 +188,7 @@ function runQuiz() {
 
     // writing current player score
     let playerScore = document.getElementById("player-score");
-    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
     // delayed hint for if a user takes too long to answer the question
     function hint() {
@@ -218,7 +218,7 @@ function playerClick() {
 
     if (user_answer === myQuestions[now].correct) {
         userPoints += 1;
-        localStorage.setItem("userPoints", userPoints)
+        localStorage.setItem("userPoints", userPoints);
         
         cleanUp();
         correctFact();
@@ -242,7 +242,7 @@ function cleanUp() {
     hintsClear.innerHTML = "";
 
     let playerScore = document.getElementById("player-score");
-    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`
+    playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 }
 
 
@@ -270,7 +270,7 @@ function correctFact() {
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
     setTimeout(cleanUp, 9999);
-    now++
+    now++;
 }
 
 
@@ -298,7 +298,7 @@ function incorrectFact() {
     playerScore.innerHTML = `You have ${userPoints} out of ${myQuestions.length} total points.`;
 
     setTimeout(cleanUp, 9999);
-    now++
+    now++;
 }
 
 /**
@@ -325,7 +325,7 @@ function countDown() {
 
 //Function to calculate users final result and print appropriate text on final page
 function userGrade() {
-    let userString = localStorage.getItem("userPoints")
+    let userString = localStorage.getItem("userPoints");
     let userScore = parseInt(userString) || 0;
 
     let showSum = document.getElementById('final-score');
@@ -333,45 +333,66 @@ function userGrade() {
     let showResult = document.getElementById('final-result');
 
     const gradeA = document.createElement('img');
-    gradeA.setAttribute('src', 'assets/media/grade-a.png')
-    gradeA.setAttribute('alt', 'Image showing user grade to be an A')
+    gradeA.setAttribute('src', 'assets/media/grade-a.png');
+    gradeA.setAttribute('alt', 'Image showing user grade to be an A');
 
     const gradeB = document.createElement('img');
-    gradeB.setAttribute('src', 'assets/media/grade-b.png')
-    gradeB.setAttribute('alt', 'Image showing user grade to be an B')
+    gradeB.setAttribute('src', 'assets/media/grade-b.png');
+    gradeB.setAttribute('alt', 'Image showing user grade to be an B');
 
     const gradeD = document.createElement('img');
-    gradeD.setAttribute('src', 'assets/media/grade-d.png')
-    gradeD.setAttribute('alt', 'Image showing user grade to be an D')
+    gradeD.setAttribute('src', 'assets/media/grade-d.png');
+    gradeD.setAttribute('alt', 'Image showing user grade to be an D');
 
     const gradeF = document.createElement('img');
-    gradeF.setAttribute('src', 'assets/media/grade-f.png')
-    gradeF.setAttribute('alt', 'Image showing user grade to be an F')
+    gradeF.setAttribute('src', 'assets/media/grade-f.png');
+    gradeF.setAttribute('alt', 'Image showing user grade to be an F');
 
-    showSum.innerHTML = `Your final score was ${userScore} out of ${myQuestions.length} points.`
+    showSum.innerHTML = `Your final score was ${userScore} out of ${myQuestions.length} points.`;
 
     if (userScore >= 0.9 * myQuestions.length) {
         showGrade.innerHTML = gradeA.outerHTML;
-        showResult.innerHTML = "Wow, you really know me like the back of your hand! I'm starting to wonder if you're secretly a mind reader or if we've been friends in a past life. Your score is so high, it's like you've been stalking me on Instagram for months. Keep up the good work, you're definitely one of my closest confidants!"
+        showResult.innerHTML = "Wow, you really know me like the back of your hand! I'm starting to wonder if you're secretly a mind reader or if we've been friends in a past life. Your score is so high, it's like you've been stalking me on Instagram for months. Keep up the good work, you're definitely one of my closest confidants!";
     } else if (userScore >= 0.7 * myQuestions.length) {
         showGrade.innerHTML = gradeB.outerHTML;
-        showResult.innerHTML = "Great job, you definitely know a thing or two about me! Your score is like a glimpse into my personality, but there's still some mystery left to unravel. It's like we're starting to become friends, but we haven't quite exchanged phone numbers yet. Keep up the good work, you're on your way to earning a spot in my inner circle!"
+        showResult.innerHTML = "Great job, you definitely know a thing or two about me! Your score is like a glimpse into my personality, but there's still some mystery left to unravel. It's like we're starting to become friends, but we haven't quite exchanged phone numbers yet. Keep up the good work, you're on your way to earning a spot in my inner circle!";
     } else if (userScore >= 0.5 * myQuestions.length) {
         showGrade.innerHTML = gradeD.outerHTML;
-        showResult.innerHTML = "Not bad, but not great either. Your score is like a distant acquaintance who occasionally pops up on my Facebook feed. You might know some of the basics, but there's definitely room for improvement if you want to earn a spot in my close circle of friends. Don't worry though, we can always grab coffee and catch up!"
+        showResult.innerHTML = "Not bad, but not great either. Your score is like a distant acquaintance who occasionally pops up on my Facebook feed. You might know some of the basics, but there's definitely room for improvement if you want to earn a spot in my close circle of friends. Don't worry though, we can always grab coffee and catch up!";
     } else {
         showGrade.innerHTML = gradeF.outerHTML;
-        showResult.innerHTML = "Oh dear, it seems like we've never even met! Your score is like a stranger who accidentally stumbled upon my quiz. It's like we're living in different worlds, or maybe I'm just too complex for you to understand. Don't worry though, we can always start fresh and get to know each other better. Who knows, we might even become best friends one day!"
+        showResult.innerHTML = "Oh dear, it seems like we've never even met! Your score is like a stranger who accidentally stumbled upon my quiz. It's like we're living in different worlds, or maybe I'm just too complex for you to understand. Don't worry though, we can always start fresh and get to know each other better. Who knows, we might even become best friends one day!";
     }
 }
 
 // Redirections
 
 function quizEnd() {
-    location.href = "endpage.html"
+    location.href = "endpage.html";
 }
 
 function restart() {
-    location.href = "quiz.html"
+    location.href = "quiz.html";
     localStorage.clear();
 }
+
+// // Event listeners to remove function calls from HTML files
+window.onload = function () {
+    if (window.location.href.includes("quiz.html")) {
+        runQuiz();
+    } else if (window.location.href.includes("endpage.html")) {
+        userGrade();
+    }
+};
+
+const startQuizButton = document.getElementById("start-quiz");
+
+startQuizButton.addEventListener("click", function () {
+    restart();
+});
+
+// const restartQuizButton = document.getElementById("restart-quiz");
+
+// restartQuizButton.addEventListener("click", function () {
+//     restart();
+// });
